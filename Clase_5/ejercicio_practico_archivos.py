@@ -39,21 +39,16 @@ class Archivos:
                 print(linea.split(',')[2])
 
 
-# Guardando el nombre del archivo en una variable e instanciando el objeto archivo1
-nombre_archivo = 'ejemplo.csv'
+# Leyendo los argumentos de entrada e instanciando el objecto archivo1
+nombre_archivo = argv[1]
+columna = argv[2]
 archivo1 = Archivos()
 
-print('Contenido del archivo')
+print(nombre_archivo)
+print(columna)
+
+print(f'Contenido del archivo')
 archivo1.imprimir_contenido(archivo=nombre_archivo)
 
-print('Contenido de la columna A')
-archivo1.imprimir_columna(archivo=nombre_archivo, columna='colA')
-
-print('Contenido de la columna B')
-archivo1.imprimir_columna(archivo=nombre_archivo, columna='colB')
-
-print('Contenido de la columna C')
-archivo1.imprimir_columna(archivo=nombre_archivo, columna='colC')
-
-print(type(argv))
-print(argv)
+print(f'Contenido de la columna')
+archivo1.imprimir_columna(archivo=nombre_archivo, columna=columna)
