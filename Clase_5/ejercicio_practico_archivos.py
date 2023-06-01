@@ -44,9 +44,6 @@ nombre_archivo = argv[1]
 columna = argv[2]
 archivo1 = Archivos()
 
-print(nombre_archivo)
-print(columna)
-
 print(f'Contenido del archivo')
 archivo1.imprimir_contenido(archivo=nombre_archivo)
 
