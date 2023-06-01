@@ -38,10 +38,6 @@ class Archivos:
             if columna == 'colC':
                 print(linea.split(',')[2])
 
-        """if columna == 'colA':
-            print((self.contenido[0]).split(',')[0])
-        self.archivo.close()"""
-
 
 # Guardando el nombre del archivo en una variable e instanciando el objeto archivo1
 nombre_archivo = 'ejemplo.csv'
