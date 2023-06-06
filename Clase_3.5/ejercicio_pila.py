@@ -20,8 +20,11 @@ class Pila:
         self.elementos.append(elemento)
 
     def eliminar(self):
-        """ Elimina el ultimo elemento de la pila.
-            Si la pila está vacía levanta una excepción. """
+        """
+        Elimina el ultimo elemento de la pila. Si la pila está vacía levanta una excepción.
+
+        :return: Elemento eliminado.
+        """
         try:
             return self.elementos.pop()
         except IndexError:
@@ -42,7 +45,9 @@ class Pila:
         return None
 
     def imprimir(self):
-        """ Imprime los elementos de la pila. """
+        """
+        Imprime los elementos de la pila.
+        """
         for elemento in self.elementos:
             print(elemento)
 
