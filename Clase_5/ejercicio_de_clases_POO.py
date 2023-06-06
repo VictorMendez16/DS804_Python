@@ -28,7 +28,7 @@ class NumeroComplejo:
         """
         self.parte_real = self.parte_real * escalar
         self.parte_imag = self.parte_imag * escalar
-        return f"{self.parte_real} + {self.parte_imag}i"
+        return str(self)
 
     def modulo(self):
         """
@@ -45,21 +45,19 @@ class NumeroComplejo:
         :return: Cadena del conjugado resultante
         """
         self.parte_imag = - self.parte_imag
-        if self.parte_imag < 0:
-            return f'{self.parte_real} {self.parte_imag}i'
-        elif self.parte_imag >= 0:
-            return f'{self.parte_real} + {self.parte_imag}i'
+        return str(self)
 
-    def imprimir_binomica(self):
+    def __str__(self):
         """
         Imprime el numero complejo en su formato binomico.
 
         :return: Cadena del numero complejo en su formato binomico
         """
         if self.parte_imag < 0:
-            return f'{self.parte_real} {self.parte_imag}'
+            return f'{self.parte_real} {self.parte_imag}i'
         elif self.parte_imag >= 0:
             return f'{self.parte_real} + {self.parte_imag}i'
+
 
 # Declarando un numero complejo
 numero_comlejo = NumeroComplejo(3, 1.5)
@@ -67,7 +65,7 @@ numero_comlejo = NumeroComplejo(3, 1.5)
 
 # Imprimiendo la representacion binomica del numero complejo
 print('Impresion del numero complejo en representacion binomica')
-print(numero_comlejo.imprimir_binomica())
+print(numero_comlejo)
 
 # Imprimiendo la multiplicacion del numero complejo por un escalar
 escalar = 2
