@@ -21,7 +21,7 @@ def fibonacci(numero):
     else:
         return fibonacci(numero - 1) + fibonacci(numero - 2)
 
-
+@cache
 def fibonacci_cache(numero):
     """
     Calcula el enesimo valor de la serie de Fibonacci.
