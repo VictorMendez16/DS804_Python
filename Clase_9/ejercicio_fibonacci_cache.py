@@ -66,3 +66,28 @@ for i in range(calculos):
         # Al momento de vovler a ejecutar fibonacci_cache() busca el resultado del valor en caché resultando en
         # un menor tiempo de ejecucion
         print(f"Tiempo de ejecucion con cache: {tiempo_de_ejecucion} segundos")
+
+"""
+Output
+
+Numero entero para calcular el ensemimo valor de la serie de Fibonacci: 45
+Numero de veces que desa hacer el calculo: 5
+
+Calculo de fibonacci(45) sin cache
+Tiempo de ejecucion sin cache: 262.8615825176239 segundos
+
+Calculo 1 de fibonacci(45)
+Tiempo de ejecucion sin cache: 0.0 segundos
+
+Calculo 2 de fibonacci(45)
+Tiempo de ejecucion con cache: 0.0 segundos
+
+Calculo 3 de fibonacci(45)
+Tiempo de ejecucion con cache: 0.0 segundos
+
+Calculo 4 de fibonacci(45)
+Tiempo de ejecucion con cache: 0.0 segundos
+
+Calculo 5 de fibonacci(45)
+Tiempo de ejecucion con cache: 0.0 segundos
+"""
